@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      Font-size: 14px;
+      background-color:hsl(0, 0%, 8%) ;
+      color: #fff;
+      width: 1440px;
+      font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
+    }
+    .attribution a { color: hsl(228, 45%, 44%);
+    }
+    img{
+      border-radius: 100px ;
+    }
+    .button{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+     
+    }
+    h2{
+      color: hsl(75, 94%, 57%) ;
+      
+    }
+    button {
+  height: 7vh;
+  width: 40vh;
+  background-color: hsl(0, 0%, 12%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 10px; /* المسافة بين الأزرار */
+}
+button:hover{
+  background-color: hsl(75, 94%, 57%) ;
+  color: black;
+}
+h1{
+  margin-left: 6vh;
+}
+h2{
+  margin-left: 3vh ;
+}
+    .all {
+      background-color: hsl(0, 0%, 20%);
+      border-radius: 20px;
+      width: 40vh;
+      padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* For screens with a width of 600px or less */
+@media (max-width: 600px) {
+  body {
+    font-size: 12px; /* Adjust font size */
+  }
+  .all {
+    width: 80vw; /* Make the container more flexible */
+    padding: 15px; /* Add padding for smaller screens */
+    margin-right: 0; /* Remove unnecessary margin */
+  }
+  .first{
+    align-items: center;
+  }
+  button{
+width: 50vh;
+  }
+button:hover{
+    background-color:hsl(75, 94%, 57%) ;
+    color:black;
+  }
+}
+
+/* For screens between 600px and 800px */
+@media (min-width: 600px) and (max-width: 800px) {
+  .all {
+    width: 60vw; /* Make container smaller */
+    padding: 20px;
+  }
+  button:hover{
+    background-color:hsl(75, 94%, 57%) ;
+    color: black;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="attribution">
+    <div class="all">
+  <img src="./assets/images/avatar-jessica.jpeg" alt="logo"> 
+<div class="first"> 
+  <div class="h2">
+  <h1> Jessica Randall </h1>
+  <h2>London, United Kingdom</h2>    
+  </div>
+
+
+  <h3>"Front-end developer and avid reader."</h3>
+</div>
+
+<div class="button">
+<button>GitHub</button>  
+ <button>Frontend Mentor</button>   
+  <button> LinkedIn</button> 
+ <button>Twitter</button> 
+  <button>Instagram</button>  
+</div>    
+  </div>
+ 
+   </div>  
+
+</body>
+</html>
