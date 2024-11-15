@@ -10,9 +10,9 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    body{
+   body{
       Font-size: 14px;
-      background-color:hsl(0, 0%, 8%) ;
+      background-color:hsl(0, 0%, 12%) ;
       color: #fff;
       width: 1440px;
       font-family: "Inter", serif;
@@ -23,9 +23,13 @@
     }
     .attribution a { color: hsl(228, 45%, 44%);
     }
-    img{
-      border-radius: 100px ;
-    }
+    img {
+  width: 100%;
+  max-width: 200px; /* حد الحجم الأقصى للصورة */
+  height: auto;
+  border-radius: 1000px;
+}
+
     .button{
       display: flex;
       flex-direction: column;
@@ -40,7 +44,7 @@
     button {
   height: 7vh;
   width: 40vh;
-  background-color: hsl(0, 0%, 12%);
+  background-color: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 100%);
   border-radius: 7px;
   cursor: pointer;
@@ -57,7 +61,7 @@ h2{
   margin-left: 3vh ;
 }
     .all {
-      background-color: hsl(0, 0%, 20%);
+      background-color: hsl(0, 0%, 8%);
       border-radius: 20px;
       width: 40vh;
       padding: 40px;
@@ -71,13 +75,19 @@ h2{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width:400px) {
+  button{
+    width: 30vh;
+  }
+  
+}
 /* For screens with a width of 600px or less */
-@media (max-width: 600px) {
+@media (min-width)and(max-width: 600px) {
   body {
     font-size: 12px; /* Adjust font size */
   }
   .all {
-    width: 80vw; /* Make the container more flexible */
+    width: 357px; /* Make the container more flexible */
     padding: 15px; /* Add padding for smaller screens */
     margin-right: 0; /* Remove unnecessary margin */
   }
@@ -85,7 +95,7 @@ h2{
     align-items: center;
   }
   button{
-width: 50vh;
+width: 40vh;
   }
 button:hover{
     background-color:hsl(75, 94%, 57%) ;
