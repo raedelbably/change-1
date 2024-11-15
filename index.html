@@ -23,10 +23,9 @@
     .attribution a { color: hsl(228, 45%, 44%);
     }
     img {
-  width: 100%;
-  max-width: 200px; /* حد الحجم الأقصى للصورة */
-  height: auto;
-  border-radius: 1000px;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
 }
 
     .button{
@@ -43,9 +42,10 @@
     button {
   height: 7vh;
   width: 40vh;
-  background-color: hsl(0, 0%, 12%);
+  background-color: hsl(0, 0%, 15%);
   color: hsl(0, 0%, 100%);
-  border: none;
+  border: none ;
+
     border-radius: 7px;
   cursor: pointer;
   margin-bottom: 10px; /* المسافة بين الأزرار */
@@ -60,21 +60,22 @@ h1{
 h2{
   margin-left: 3vh ;
 }
-    .all {
-      background-color: hsl(0, 0%, 20%);
-      border-radius: 20px;
-      width: 40vh;
-      padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  .all {
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 20px;
+    width: 50vh; /* تصغير عرض الكرت */
+    padding: 40px; /* تصغير البُعد الداخلي */
+    height: 70vh; /* تصغير ارتفاع الكرت */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /* وضع الكرت في منتصف الصفحة رأسياً */
+    left: 50%; /* وضع الكرت في منتصف الصفحة أفقياً */
+    transform: translate(-50%, -50%); /* لضبط المركز بشكل دقيق */
+  }
+
 @media (max-width:400px) {
   button{
     width: 30vh;
@@ -124,9 +125,11 @@ button:hover{
 <body>
   <div class="attribution">
     <div class="all">
-  <img src="./avatar-jessica.jpeg" alt="logo"> 
-<div class="first"> 
-  <div class="h2">
+  <img src="./assets/images/avatar-jessica.jpeg" alt="logo"> 
+<div class="first">   
+ 
+  <div class="h2"> 
+  
   <h1> Jessica Randall </h1>
   <h2>London, United Kingdom</h2>    
   </div>
@@ -148,4 +151,3 @@ button:hover{
 
 </body>
 </html>
-
