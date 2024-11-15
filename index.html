@@ -10,7 +10,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-   body{
+    body{
       Font-size: 14px;
       background-color:hsl(0, 0%, 12%) ;
       color: #fff;
@@ -75,11 +75,15 @@ h2{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media (max-width:300px) {
+@media (max-width:400px) {
   button{
     width: 30vh;
   }
-  
+  .all{
+    width: 300px; /* Make the container more flexible */
+    padding: 15px; /* Add padding for smaller screens */
+    margin-right: 0; /* Remove unnecessary margin */
+  }
 }
 /* For screens with a width of 600px or less */
 @media (min-width)and(max-width: 600px) {
@@ -120,12 +124,12 @@ button:hover{
 <body>
   <div class="attribution">
     <div class="all">
-       <img src="./assets/images/avatar-jessica.jpeg" alt="logo">       
+  <img src="./assets/images/avatar-jessica.jpeg" alt="logo"> 
 <div class="first"> 
+  <div class="h2">
   <h1> Jessica Randall </h1>
   <h2>London, United Kingdom</h2>    
-  <h3>"Front-end developer and avid reader."</h3>
-</div>
+  </div>
 
 
   <h3>"Front-end developer and avid reader."</h3>
@@ -144,3 +148,4 @@ button:hover{
 
 </body>
 </html>
+
